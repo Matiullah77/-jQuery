@@ -1,0 +1,192 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f5f9;
+    color: #333333;
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: #244a82;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    margin-top: 0;
+}
+
+.studentName {
+    font-size: 28px;
+}
+
+.introduction {
+    max-width: 650px;
+    margin: 15px auto;
+}
+
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 25px auto;
+}
+
+
+.card {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+button {
+    background-color: #244a82;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px 3px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3968ad;
+}
+
+input {
+    width: 100%;
+    max-width: 350px;
+    padding: 10px;
+    margin: 8px 0 12px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    display: block;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.galleryImage {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+.slideHeading {
+    background-color: #e3ebf7;
+    padding: 12px;
+    margin-bottom: 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.slidePanel {
+    background-color: #f8faff;
+    padding: 12px;
+    border: 1px solid #e3ebf7;
+}
+
+
+.message {
+    color: #244a82;
+    font-weight: bold;
+}
+
+.liveOutput {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f2f5f9;
+    border-radius: 5px;
+}
+
+.skillBarContainer {
+    margin-bottom: 20px;
+}
+
+.skillBar {
+    width: 100%;
+    max-width: 500px;
+    height: 25px;
+    background-color: #dddddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skillProgress {
+    width: 0;
+    height: 100%;
+    background-color: #244a82;
+}
+
+
+footer {
+    background-color: #244a82;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+
+body.darkTheme {
+    background-color: #1b1b1b;
+    color: #eeeeee;
+}
+
+body.darkTheme .card {
+    background-color: #2b2b2b;
+}
+
+body.darkTheme .slideHeading {
+    background-color: #3a3a3a;
+}
+
+body.darkTheme .slidePanel {
+    background-color: #333333;
+    border-color: #444444;
+}
+
+body.darkTheme .liveOutput {
+    background-color: #3a3a3a;
+}
+
+body.darkTheme input {
+    background-color: #333333;
+    color: white;
+    border-color: #666666;
+}
+
+@media (max-width: 600px) {
+    main {
+        width: 95%;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    .galleryImage {
+        max-width: 100%;
+    }
+
+    header {
+        padding: 25px 12px;
+    }
+}

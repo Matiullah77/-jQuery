@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My jQuery Portfolio</title>
+
+    
+    <link rel="stylesheet" href="style.css">
+
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    
+    <header>
+        <h1 id="mainTitle">Welcome to My Portfolio</h1>
+
+        <h2 class="studentName">Matiullah Zaman</h2>
+
+        <p id="headline">Computer Science Student</p>
+
+        <p class="introduction">
+            Hello! I am a Computer Science student interested in programming,
+            web development, and learning new technologies.
+        </p>
+
+        <button id="changeGreeting">Change Greeting</button>
+        <button id="lightTheme">Light Theme</button>
+        <button id="darkTheme">Dark Theme</button>
+    </header>
+
+
+    <main>
+
+        
+        <section class="card">
+            <h2>Task 2: About Me</h2>
+
+            <div id="aboutContent">
+                <p>
+                    My name is Matiullah. I am studying Computer Science
+                    and learning HTML, CSS, JavaScript, and jQuery.
+                </p>
+
+                <p id="statusMessage">
+                    Currently learning jQuery!
+                </p>
+
+                <h3>Fun Facts About Me</h3>
+
+                <ul id="funFacts">
+                    <li>I enjoy learning programming.</li>
+                    <li>I want to become a software engineer.</li>
+                    <li>I like learning new technologies.</li>
+                </ul>
+            </div>
+
+            <button id="hideButton">Hide</button>
+            <button id="showButton">Show</button>
+            <button id="toggleButton">Toggle</button>
+        </section>
+
+
+        
+        <section class="card">
+            <h2>Task 3: My Gallery</h2>
+
+            <p>Here are two images related to technology and programming.</p>
+
+            <div class="gallery">
+                <img
+                    class="galleryImage"
+                    src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80"
+                    alt="Laptop used for web development"
+                >
+
+                <img
+                    class="galleryImage"
+                    src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80"
+                    alt="Computer technology"
+                >
+            </div>
+
+            <button id="fadeInButton">Fade In</button>
+            <button id="fadeOutButton">Fade Out</button>
+            <button id="fadeToggleButton">Fade Toggle</button>
+        </section>
+
+
+        
+        <section class="card">
+            <h2>Task 4: My Favorites</h2>
+
+            <h3 class="slideHeading">My Favorite Music</h3>
+            <div class="slidePanel">
+                <p>I enjoy listening to music in my free time.</p>
+            </div>
+
+            <h3 class="slideHeading">My Favorite Movie</h3>
+            <div class="slidePanel">
+                <p>I enjoy movies about technology, science, and adventure.</p>
+            </div>
+
+            <h3 class="slideHeading">My Favorite Subject</h3>
+            <div class="slidePanel">
+                <p>Computer Science is my favorite subject because I like solving problems.</p>
+            </div>
+
+            <button id="slideUpButton">Slide Up</button>
+            <button id="slideDownButton">Slide Down</button>
+            <button id="slideToggleButton">Slide Toggle</button>
+        </section>
+
+
+        
+        <section class="card">
+            <h2>Task 5: My Technical Skills</h2>
+
+            <ul id="skillsList">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+            </ul>
+
+            <input
+                type="text"
+                id="skillInput"
+                placeholder="Enter a technical skill"
+            >
+
+            <button id="addSkillButton">Add Skill</button>
+            <button id="prependSkillButton">Prepend Skill</button>
+            <button id="removeSkillButton">Remove Skill</button>
+
+            <p id="skillMessage" class="message"></p>
+        </section>
+
+
+        
+        <section class="card">
+            <h2>Task 6: My Social Media</h2>
+
+            <p>
+                Visit my GitHub profile:
+                <a
+                    id="socialLink"
+                    href="https://github.com/Matiullah77/Forms-and-Validation.git"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >My GitHub</a>
+            </p>
+
+            <button id="changeLinkButton">Change Link Destination</button>
+
+            <p id="linkMessage" class="message"></p>
+        </section>
+
+
+        
+        <section class="card">
+            <h2>Task 7: Live Form</h2>
+
+            <form id="contactForm">
+                <label for="visitorName">Name:</label>
+
+                <input
+                    type="text"
+                    id="visitorName"
+                    placeholder="Enter your name"
+                >
+
+                <label for="visitorEmail">Email:</label>
+
+                <input
+                    type="email"
+                    id="visitorEmail"
+                    placeholder="Enter your email"
+                >
+            </form>
+
+            <div class="liveOutput">
+                <h3>Your Information</h3>
+
+                <p>Name: <span id="nameOutput">Not entered yet</span></p>
+
+                <p>Email: <span id="emailOutput">Not entered yet</span></p>
+            </div>
+        </section>
+
+
+        
+        <section class="card">
+            <h2>Task 8: Animate My Skills</h2>
+
+            <p>Click the button to animate the skill bars.</p>
+
+            <div class="skillBarContainer">
+                <p>HTML</p>
+                <div class="skillBar">
+                    <div class="skillProgress" id="htmlProgress"></div>
+                </div>
+            </div>
+
+            <div class="skillBarContainer">
+                <p>CSS</p>
+                <div class="skillBar">
+                    <div class="skillProgress" id="cssProgress"></div>
+                </div>
+            </div>
+
+            <div class="skillBarContainer">
+                <p>JavaScript</p>
+                <div class="skillBar">
+                    <div class="skillProgress" id="javascriptProgress"></div>
+                </div>
+            </div>
+
+            <button id="animateSkillsButton">Animate My Skills</button>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>&copy; 2026 Matiullah Zaman | My jQuery Portfolio</p>
+    </footer>
+
+</body>
+</html>
